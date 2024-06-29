@@ -1,2 +1,2 @@
 # BirthdayWishing
- For a my special friend
+ You can wish your favourite person
