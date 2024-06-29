@@ -1,0 +1,175 @@
+body {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  min-width: 600px; /* Set a minimum width to prevent collapsing of background images */
+  background-color: #c88cfc; /* Light purple */
+  background-image: linear-gradient(120deg, #aaa7b0, #ff002b);
+  background-attachment: fixed; /* Keep the background fixed even when scrolling */
+  overflow: hidden;
+  position: relative;
+}
+
+
+  body{
+    background-image: url(../images/cake.png), url(../images/cake.png);
+    background-position: left top, right top;
+    background-repeat: no-repeat,no-repeat;
+    background-size: contain, contain;
+    min-width: 100px;
+    min-height: auto;
+  }
+  #msgSet{
+    line-height: 1.4;
+    font-size: 106%;
+    
+  }
+  #msgSet h3 {
+    margin: 0px 0; /* Adjust the top and bottom margins */
+    font-family:cursive;
+    font-weight: normal;
+    
+
+  }
+  #playButton{
+    z-index: 6;
+    color: #ffd4f7;
+    background: linear-gradient(to bottom, rgba(255, 0, 230, 0.627), rgb(255, 0, 106));
+  }
+  #playButton:hover{
+    cursor: pointer;
+    color: #d8ffd4;
+    background: green;
+    
+
+  }
+
+  #bgImg{
+    background: linear-gradient(to bottom, rgb(86, 204, 255), #fefefe78); /* Adjust colors and transparency as needed */
+    width:32.5%;
+    min-width: 250px;
+    height: 25%;
+    margin: auto;
+    padding: 10px;
+    border-radius: 25px;
+    z-index: 3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.461); /* Border shadow */
+    backdrop-filter: blur(2px);
+  }
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Aligns content at the top of the page */
+  margin-top: 20px; /* Add some space from the top */
+}
+
+#image-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#image-container div {
+  margin: 0 10px; /* Adjust the spacing between the candles */
+}
+
+
+#birthday-message {
+  margin: 5px 0;
+    font-size: 24px;
+    color: #000000;
+    max-width: 100%; /* Limit the width of the birthday message */
+    text-align: center;
+    
+}
+
+
+
+#volume-display {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+}
+
+#img-after:hover #photo {
+  transform: scale(1.1); /* Scale up the image on hover */
+  margin: 0px auto;
+  border-radius: 25px;
+}
+#img-after{
+  width: 270px; /* Set the width of the container */
+  height: auto; /* Set the height of the container */
+  overflow: hidden; /* Hide any overflow content */
+  border-radius: 25px;
+  margin: 0px auto;
+}
+#photo{
+  box-shadow: 0 0 10px rgb(255, 255, 255); /* Border shadow */
+  border-radius: 25px;
+    display: none;
+    width: 100%; /* Make the image fill the container */
+  height: auto; /* Maintain the aspect ratio */
+  transition: opacity 1s ease;
+  transition: transform 0.5s ease;
+    margin: 0px auto;
+}
+
+
+#candle1{
+  display: block;
+}
+#candle2{
+  display: none;
+}
+#candle3{
+  display: none;
+}
+#candle4{
+  display: none;
+}
+
+.birthday-photo {
+  position: absolute;
+  top: 50%; /* Center the photo vertically */
+  left: 50%; /* Center the photo horizontally */
+  transform: translate(-50%, -50%); /* Center the photo precisely */
+  width: 300px; /* Adjust the width of the photo */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-width: 80%;
+  z-index: -1; /* Set a lower z-index to position the photo behind other elements */
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #6636c5; /* Pink */
+  border-radius: 50%;
+  animation: confetti-animation 3s infinite;
+  z-index: 1;
+  opacity: 0.4;
+}
+
+@keyframes confetti-animation {
+  0% {
+      transform: translateY(0) rotate(0);
+  }
+  100% {
+      transform: translateY(600px) rotate(360deg);
+  }
+}
+
+.rotating-image {
+  position: absolute;
+  z-index: 2;
+  opacity: 0.9;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
