@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday Pamuda🎂</title>
-    <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Pamuda🎂</title>
+  <link rel="icon" type="image/x-icon" href="../favicon/favicon.ico">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="initialize()" class="not-loaded" >
+
+<body onload="initialize()" class="not-loaded">
   <div id="main">
     <div id="balloons-container">
+      <!-- !Add all the balloons -->
       <img class="rotating-image" src="../images/red.png" height="150" width="100">
       <img class="rotating-image" src="../images/cyan.png" height="150" width="100">
       <img class="rotating-image" src="../images/green.png" height="150" width="100">
@@ -18,57 +21,49 @@
       <img class="rotating-image" src="../images/pink.png" height="150" width="100">
       <img class="rotating-image" src="../images/purple.png" height="150" width="100">
       <img class="rotating-image" src="../images/yellow.png" height="150" width="100">
-  </div>
-  <div class="birthday-photo"></div>
-  <div class="confetti" style="top: 0px;  left: 10%;"></div>
-  <div class="confetti" style="top: 250px;  left: 30%;"></div>
-  <div class="confetti" style="top: 500px;  right: 10%;"></div>
-  <div class="confetti" style="top: 250px;  right: 30%;"></div>
-  <div class="confetti" style="top: 0px;  right: 50%;"></div>
-  <div id="bgImg">
+    </div>
 
-
-  
-    <h1 id="birthday-message">Please be silent🤫!!!</h1>
-    
-    
-    <!-- Two images need to show parallelly and if(volume>90) then flame-image should be hidden -->
-    <div id="image-container">
-      <div>
-        <img id="candle1" src="../images/set1.png" >
-        <img id="candle2" src="../images/set2.png" >
-        <img id="candle3" src="../images/set3.png" >
-        <img id="candle4" src="../images/set4.png" >
+    <!-- *Falling dots -->
+    <div class="confetti" style="top: 0px;  left: 10%;"></div>
+    <div class="confetti" style="top: 250px;  left: 30%;"></div>
+    <div class="confetti" style="top: 500px;  right: 10%;"></div>
+    <div class="confetti" style="top: 250px;  right: 30%;"></div>
+    <div class="confetti" style="top: 0px;  right: 50%;"></div>
+    <div id="bgImg">
+      <!-- !Instruction text -->
+      <h1 id="birthday-message">Please be silent🤫!!!</h1>
+      <!-- !Add all the candles -->
+      <div id="image-container">
+        <div>
+          <img id="candle1" src="../images/set1.png">
+          <img id="candle2" src="../images/set2.png">
+          <img id="candle3" src="../images/set3.png">
+          <img id="candle4" src="../images/set4.png">
+        </div>
       </div>
-      
+      <div id="img-after">
+        <!-- !Add Photo -->
+        <img id="photo" class="hidden" src="../images/mainPhoto.jpg" alt="Photo">
+      </div>
+      <div id="msgSet">
+        <center>
+          <!-- !Add all the messages -->
+          <h3 id="msg1"></h3>
+          <h3 id="msg2"></h3>
+          <h3 id="msg3"></h3>
+          <h3 id="msg4"></h3>
+          <h3 id="msg5"></h3>
+          <h3 id="msg6"></h3>
+          <h3 id="msg7"></h3>
+        </center>
+      </div>
+      <!-- *Volume Preview(default=hidden) -->
+      <div id="volumeDisplay"></div>
     </div>
-    <div id="img-after">
-
-      <img id="photo" class="hidden" src="../images/mainPhoto.jpg" alt="Photo">
-    </div>
-    
-    <div id="msgSet">
-      <center>
-        <h3 id="msg1"></h3>
-        <h3 id="msg2"></h3>
-        <h3 id="msg3"></h3>
-        <h3 id="msg4"></h3>
-        <h3 id="msg5"></h3>
-        <h3 id="msg6"></h3>
-        <h3 id="msg7"></h3>
-      </center>
-    </div>
-    <div id="volumeDisplay"></div>
-</div>
-    <div class="balloon"></div>
-
     <audio id="myAudio" autoplay="true"></audio>
     <button id="playButton">Play</button>
-    
-
-
-
   </div>
-    <script src="script.js" type="text/javascript"></script>
+  <script src="script.js" type="text/javascript"></script>
 </body>
+
 </html>
