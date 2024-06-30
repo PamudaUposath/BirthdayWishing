@@ -8,7 +8,7 @@ var audio = document.getElementById("myAudio");
 function playAudio() {
     playButton.style.display = 'none';
     // !Add Happy Birthday Song
-    audio.src = "../audios/introMusic.mp3";
+    audio.src = "./audios/introMusic.mp3";
     audio.play();
     // Checking process
     audio.play().then(function () {
@@ -25,7 +25,7 @@ function playAudio() {
     setTimeout(function () {
         msg.innerText = "Guys, give him a round of applause👏";
         // !Add clapping audio
-        audio.src = "../audios/clap.mp3";
+        audio.src = "./audios/clap.mp3";
         audio.play();
     }, 19000);
 };
@@ -164,7 +164,7 @@ function initialize() {
                     setTimeout(function () {
                         msg1.innerHTML = "<b>Happy Birthday Pamu</b>😘";
                         // !Add a voice to read text
-                        audio.src = "../audios/voice.mp3";
+                        audio.src = "./audios/voice.mp3";
                         audio.play();
                     }, 2000);
                     setTimeout(function () {
@@ -191,7 +191,7 @@ function initialize() {
                     }, 15500);
                     setTimeout(function () {
                         // !Add a song to repeat until the page closes
-                        audio.src = "../audios/endMusic.mp3";
+                        audio.src = "./audios/endMusic.mp3";
                         audio.play();
                         audio.volume = 0.6;
                         audio.loop = true;

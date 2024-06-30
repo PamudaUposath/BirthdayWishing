@@ -17,10 +17,12 @@ A fun and interactive web page to wish someone special a happy birthday! This pr
   - `LICENSE`
   - `.gitattributes`
   - `.git/`
+  - `index.html`
+  - `script.js`
+  - `style.css`
   - **audios/**: Contains all the audio clips.
   - **favicon/**: Contains different sizes of photos.
   - **images/**: Contains all the images and elements that help to create images.
-  - **src/**: Contains `index.html`, `script.js`, and `style.css`.
 
 ## HTML Structure
 
@@ -55,7 +57,7 @@ The JavaScript file includes:
 ## Usage
 
 1. Clone the repository.
-2. Open `src/index.html` in a web browser.
+2. Open `index.html` in a web browser.
 3. Click the play button to start the birthday experience.
 4. Follow the instructions and enjoy the interactive birthday wish.
 
