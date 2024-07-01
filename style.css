@@ -2,6 +2,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   min-height: 100vh;
   min-width: 600px;
+  /* !Change the background image(cake) */
   background-image: url(./images/cake.png), url(./images/cake.png);
   /* *If you want you can remove images and add a gradient color for background */
   /* background-image: linear-gradient(120deg, #aaa7b0, #ff002b); */
