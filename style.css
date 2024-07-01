@@ -114,7 +114,7 @@ body {
   border-radius: 25px;
   display: none;
   width: 100%;
-  height: 40vh;
+  height: auto;
   transition: opacity 1s ease;
   transition: transform 0.5s ease;
   margin: 0px auto;
